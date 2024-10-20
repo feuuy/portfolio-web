@@ -9,7 +9,7 @@ export default function Logo() {
     >
       <h1>Felicio</h1>
       <h1>
-        Orlandini<span className="text-green-600">.</span>
+        Orlandini<span className="text-amber-500">.</span>
       </h1>
     </div>
   )

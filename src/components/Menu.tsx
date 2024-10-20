@@ -3,6 +3,7 @@
 import { useStore } from '@/app/hooks/useIsMenuOpen'
 import Button from './Button'
 import Social from './Social'
+import MenuLink from './MenuLink'
 
 export default function Menu() {
   const { isOpen } = useStore()
@@ -11,7 +12,11 @@ export default function Menu() {
     <div
       className={`bg-black flex flex-col justify-between gap-4 fixed w-full h-full top-0 transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'} p-4 pt-24`}
     >
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-16">
+        <div>
+          <MenuLink href="/">Contact me</MenuLink>
+          <MenuLink href="/">Blog</MenuLink>
+        </div>
         <Button color="text-black" backgroundColor="bg-white">
           Download CV
         </Button>

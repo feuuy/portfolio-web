@@ -1,3 +1,18 @@
+import Button from './Button'
+
 export default function Hero() {
-  return null
+  return (
+    <div className="flex flex-col gap-16">
+      <h1 className="text-6xl">
+        I&apos;m a{' '}
+        <span className="bg-gradient-to-r from-amber-600 via-amber-400 to-amber-600 text-transparent bg-clip-text">
+          Full-Stack Developer
+        </span>{' '}
+        helping you turn ideas into clicks.
+      </h1>
+      <div className="w-full md:w-1/3">
+        <Button icon>Let&apos;s talk</Button>
+      </div>
+    </div>
+  )
 }

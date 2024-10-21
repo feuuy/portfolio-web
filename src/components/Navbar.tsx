@@ -7,7 +7,7 @@ import Logo from './Logo'
 
 export default function Navbar() {
   return (
-    <div className="flex p-4 justify-between items-center">
+    <div className="flex fixed w-full z-10 p-4 justify-between items-center md:px-40">
       <Logo />
       <Hamburger />
     </div>

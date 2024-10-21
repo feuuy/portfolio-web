@@ -8,16 +8,16 @@ export default function MenuLink({ children, href }: { children: React.ReactNode
 
   return (
     <Link
-      className="flex justify-between text-white items-center py-4 border-b-white border-b-[0.5px]"
+      className="text-white text-2xl flex justify-between items-center hover:opacity-80 hover:cursor-pointer"
       href={href}
       onClick={toggleOpen}
     >
-      <p>{children}</p>
+      {children}
       <Image
         alt={'Chevron right'}
         src={require('public/icons/chevron-right.svg')}
-        width={24}
-        height={24}
+        width={32}
+        height={32}
       />
     </Link>
   )

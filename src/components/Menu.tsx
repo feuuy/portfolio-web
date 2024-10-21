@@ -6,18 +6,19 @@ import Social from './Social'
 import MenuLink from './MenuLink'
 
 export default function Menu() {
-  const { isOpen } = useStore()
+  const { isOpen, toggleOpen } = useStore()
 
   return (
     <>
       <div
-        className={`fixed inset-0 bg-black/60 transition-opacity duration-300 ease-in-out ${isOpen ? 'md:opacity-100' : 'opacity-0'}`}
+        onClick={() => isOpen && toggleOpen()}
+        className={`fixed inset-0 bg-black/80 transition-opacity duration-300 ease-in-out ${isOpen ? 'md:opacity-100 md:visible' : 'opacity-0 invisible'}`}
       ></div>
       <div
-        className={`bg-black flex flex-col justify-between gap-4 fixed w-full md:w-1/3 h-full top-0 transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0 md:translate-x-[66.7vw]' : 'translate-x-full md:translate-x-[100vw]'} p-4 pt-24`}
+        className={`bg-black flex flex-col justify-between gap-4 fixed w-full md:w-1/3 h-full top-0 transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0 md:translate-x-[66.7vw]' : 'translate-x-full md:translate-x-[100vw]'} p-4 pt-36`}
       >
-        <div className="flex flex-col gap-16">
-          <div>
+        <div className="flex flex-col gap-12">
+          <div className="flex flex-col gap-6">
             <MenuLink href="/">Contact me</MenuLink>
             <MenuLink href="/">Blog</MenuLink>
           </div>

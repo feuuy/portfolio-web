@@ -1,12 +1,12 @@
 import React from 'react'
 import 'public/globals.css'
 import { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
+import { Space_Mono } from 'next/font/google'
 
 import Navbar from '@/components/Navbar'
 import Menu from '@/components/Menu'
 
-const montserrat = Poppins({ weight: '400', subsets: ['latin'] })
+const spaceMono = Space_Mono({ weight: '400', subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Felicio Orlandini',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
+      <body className={spaceMono.className}>
         <nav>
           <Navbar />
           <Menu />

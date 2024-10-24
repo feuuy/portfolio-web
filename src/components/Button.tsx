@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import Image from 'next/image'
+import { RiArrowRightSLine } from 'react-icons/ri'
 
 export default function Button({
   children,
@@ -16,15 +16,11 @@ export default function Button({
 }) {
   return (
     <button
-      className={`flex group gap-4 items-center justify-center ${color || 'text-white'} ${backgroundColor || 'bg-black'} p-4 rounded-xl w-full hover:opacity-80 transition-opacity duration-300 ease-in-out`}
+      className={`flex group gap-4 items-center justify-center ${color || 'text-black'} ${backgroundColor || 'bg-white'} p-4  w-full outline outline-black outline-offset-2 hover:outline-white transition-color duration-300 ease-in-out`}
     >
       {children}
       {icon && (
-        <Image
-          className="transition-transform duration-300 ease-in-out group-hover:translate-x-2"
-          src={require('public/icons/chevron-right.svg')}
-          alt="Mouse click"
-        />
+        <RiArrowRightSLine className="group-hover:translate-x-2 duration-300 transition-transform ease-in-out" />
       )}
     </button>
   )

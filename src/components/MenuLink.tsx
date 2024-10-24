@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import { RiArrowRightSLine } from 'react-icons/ri'
 import Link from 'next/link'
 import React from 'react'
 import { useStore } from '@/app/hooks/useIsMenuOpen'
@@ -8,17 +8,12 @@ export default function MenuLink({ children, href }: { children: React.ReactNode
 
   return (
     <Link
-      className="text-white text-2xl flex justify-between items-center hover:opacity-80 hover:cursor-pointer"
+      className="text-white group text-2xl p-2 flex justify-between items-center outline outline-black outline-offset-2 hover:outline-white hover:cursor-pointer transition-color duration-300 ease-in-out"
       href={href}
       onClick={toggleOpen}
     >
       {children}
-      <Image
-        alt={'Chevron right'}
-        src={require('public/icons/chevron-right.svg')}
-        width={32}
-        height={32}
-      />
+      <RiArrowRightSLine className="group-hover:translate-x-2 duration-300 transition-transform ease-in-out" />
     </Link>
   )
 }

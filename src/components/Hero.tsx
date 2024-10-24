@@ -5,7 +5,7 @@ export default function Hero() {
     <div className="flex flex-col gap-16">
       <h1 className="text-6xl">
         I&apos;m a{' '}
-        <span className="bg-gradient-to-r from-amber-600 via-amber-400 to-amber-600 text-transparent bg-clip-text">
+        <span className="bg-gradient-to-r from-green-600 via-green-400 to-green-600 text-transparent bg-clip-text">
           Full-Stack Developer
         </span>{' '}
         helping you turn ideas into clicks.

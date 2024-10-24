@@ -4,6 +4,7 @@ import { useStore } from '@/app/hooks/useIsMenuOpen'
 import Button from './Button'
 import Social from './Social'
 import MenuLink from './MenuLink'
+import { RiGithubLine, RiInstagramLine, RiLinkedinLine } from 'react-icons/ri'
 
 export default function Menu() {
   const { isOpen, toggleOpen } = useStore()
@@ -23,25 +24,19 @@ export default function Menu() {
             <MenuLink href="/">Blog</MenuLink>
           </div>
           <Button color="text-black" backgroundColor="bg-white">
-            Download CV
+            Download Resume
           </Button>
         </div>
         <div className="flex justify-around items-center gap-2">
-          <Social
-            src={require('public/icons/instagram.svg')}
-            alt="Instagram"
-            href="https://www.instagram.com/feuyyyy/"
-          />
-          <Social
-            src={require('public/icons/github.svg')}
-            alt="Github"
-            href="https://github.com/feuuy"
-          />
-          <Social
-            src={require('public/icons/linkedin.svg')}
-            alt="LinkedIn"
-            href="https://www.linkedin.com/in/forlandini/"
-          />
+          <Social href="https://www.instagram.com/feuyyyy/">
+            <RiInstagramLine size={40} />
+          </Social>
+          <Social href="https://github.com/feuuy">
+            <RiGithubLine size={40} />
+          </Social>
+          <Social href="https://www.linkedin.com/in/forlandini/">
+            <RiLinkedinLine size={40} />
+          </Social>
         </div>
       </div>
     </>

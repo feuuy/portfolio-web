@@ -8,7 +8,7 @@
 - [x] Create DB Collections
 - [x] Deploy Project to Vercel
 - [x] Connect to DB
-- [ ] Upload Images to Payload
+- [x] Upload Images to Payload
 - [ ] Navbar
 - [ ] Hero Section
 - [ ] Projects Section

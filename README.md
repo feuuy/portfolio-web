@@ -5,7 +5,7 @@
 - [x] Initialize Git Repo
 - [x] Setup Project Dir
 - [x] Setup Additional Libs
-- [ ] Create DB Collections
+- [x] Create DB Collections
 - [ ] Deploy Project to Vercel
 - [ ] Connect to DB
 - [ ] Upload Images to Payload

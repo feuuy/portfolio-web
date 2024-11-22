@@ -1,6 +1,8 @@
 import React from 'react'
 import { NextUIProvider } from '@nextui-org/react'
 
+import 'public/globals.css'
+
 export const metadata = {
   title: {
     default: 'Felicio Orlandini / Portfolio',
@@ -11,12 +13,12 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <NextUIProvider>
-      <html lang="en">
-        <body>
-          <main>{children}</main>
-        </body>
-      </html>
-    </NextUIProvider>
+    <html lang="en">
+      <body>
+        <main>
+          <NextUIProvider>{children}</NextUIProvider>
+        </main>
+      </body>
+    </html>
   )
 }

@@ -6,7 +6,6 @@ export const Projects: CollectionConfig = {
     useAsTitle: 'title',
     defaultColumns: ['title', 'description'],
   },
-  auth: true,
   fields: [
     {
       type: 'tabs',

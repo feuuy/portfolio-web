@@ -6,8 +6,8 @@
 - [x] Setup Project Dir
 - [x] Setup Additional Libs
 - [x] Create DB Collections
-- [ ] Deploy Project to Vercel
-- [ ] Connect to DB
+- [x] Deploy Project to Vercel
+- [x] Connect to DB
 - [ ] Upload Images to Payload
 - [ ] Navbar
 - [ ] Hero Section

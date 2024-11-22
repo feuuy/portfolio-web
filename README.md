@@ -9,6 +9,7 @@
 - [x] Deploy Project to Vercel
 - [x] Connect to DB
 - [x] Upload Images to Payload
+- [x] Implement Light/Dark Theme
 - [ ] Navbar
 - [ ] Hero Section
 - [ ] Projects Section

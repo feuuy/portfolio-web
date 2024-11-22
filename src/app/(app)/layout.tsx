@@ -1,5 +1,6 @@
 import React from 'react'
 import { NextUIProvider } from '@nextui-org/react'
+import { ThemeProvider as NextThemesProvider } from 'next-themes'
 
 import 'public/globals.css'
 
@@ -13,10 +14,14 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
         <main>
-          <NextUIProvider>{children}</NextUIProvider>
+          <NextUIProvider className="dark dark:bg-stone-800">
+            <NextThemesProvider attribute="class" defaultTheme="light">
+              {children}
+            </NextThemesProvider>
+          </NextUIProvider>
         </main>
       </body>
     </html>

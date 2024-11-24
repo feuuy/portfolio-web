@@ -10,11 +10,11 @@
 - [x] Connect to DB
 - [x] Upload Images to Payload
 - [x] Implement Light/Dark Theme
-- [ ] Navbar
+- [x] Navbar
 - [ ] Hero Section
 - [ ] Projects Section
+- [ ] Projects Page
 - [ ] Technologies Section
-- [ ] Footer
 - [ ] Contact Page
 - [ ] CV Download
 

@@ -4,9 +4,5 @@ export const metadata = {
 }
 
 export default async function ContactPage() {
-  return (
-    <div className="text-red-500">
-      <h1 className="text-3xl">Contact Page</h1>
-    </div>
-  )
+  return <h1 className="text-3xl">Contact Page</h1>
 }

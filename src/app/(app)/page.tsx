@@ -1,3 +1,4 @@
+import Logo from '@/components/BottomNavBar/Logo'
 import { ThemeSwitch } from '@/components/ThemeSwitch'
 
 export const metadata = {
@@ -7,8 +8,9 @@ export const metadata = {
 
 export default async function LandingPage() {
   return (
-    <>
+    <div className="p-4 flex justify-between">
+      <Logo />
       <ThemeSwitch />
-    </>
+    </div>
   )
 }

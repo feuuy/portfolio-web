@@ -2,6 +2,7 @@ import React from 'react'
 import { NextUIProvider } from '@nextui-org/react'
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
 
+import Navbar from '@/components/BottomNavBar/BottomNavBar'
 import 'public/globals.css'
 
 export const metadata = {
@@ -15,10 +16,11 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body className="transition-colors duration-300 ease-in-out">
         <main>
-          <NextUIProvider className="dark dark:bg-stone-800">
+          <NextUIProvider>
             <NextThemesProvider attribute="class" defaultTheme="light">
+              <Navbar />
               {children}
             </NextThemesProvider>
           </NextUIProvider>
